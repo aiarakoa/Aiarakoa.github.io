@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'actionhero';
+    src: url('/fonts/actionhero/TTF/ActionHeroRegular.ttf');
+}
+
+@font-face {
+    font-family: 'actionherounderlines';
+    src: url('/fonts/actionhero/TTF/ActionHeroUnderlines.ttf');
+}
+
+@font-face {
+    font-family: 'actionheroaltone';
+    src: url('/fonts/actionhero/TTF/ActionHeroAlt01.ttf');
+}
+
+@font-face {
+    font-family: 'actionheroalttwo';
+    src: url('/fonts/actionhero/TTF/ActionHeroAlt02.ttf');
+}
+
+@font-face {
+    font-family: 'actionheroaltthree';
+    src: url('/fonts/actionhero/TTF/ActionHeroAlt03.ttf');
+}
+
+@font-face {
+    font-family: 'neoncitydisplay';
+    src: url('/fonts/neoncity/OTF/NeoncityDisplay-MVVLv.otf');
+}
+
+@font-face {
+    font-family: 'neoncityscript';
+    src: url('/fonts/neoncity/TTF/NeoncityScript-Demo.ttf');
+    src: url('/fonts/neoncity/OTF/NeoncityScript-K77Je.otf');
+}
+
+@font-face {
+    font-family: 'thunderstorm';
+    src: url('/fonts/thunderstorm-retro/TTF/Thunderstorm.ttf');
+}
+
+@font-face {
+    font-family: 'jagalana';
+    src: url('/fonts/jagalana/TTF/jagalana.ttf');
+    src: url('/fonts/jagalana/OTF/jagalana.otf');
+}
+
+@font-face {
+    font-family: 'outrunner';
+    src: url('/fonts/outrunner/TTF/outrunner.ttf');
+    src: url('/fonts/outrunner/OTF/outrunner.otf');
+}
+
+@font-face {
+    font-family: 'indelible';
+    src: url('/fonts/indelible/OTF/Indelible.otf');
+}

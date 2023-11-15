@@ -1,0 +1,482 @@
+h1 {
+    font-family: actionhero;
+    font-size: 15em;
+    color: yellow;
+    font-weight: 500;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h2 {
+    font-family: indelible;
+    color: #ff4400;
+    font-size: 12em;
+    font-weight: 100;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#hometitle {
+    text-align: center;
+}
+
+#startgame {
+    align-items: center;
+    justify-content: end;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input:invalid {
+    border-color: red;
+    background-color: rgba(255,0,0,.2);
+    color: red;
+}
+
+input {
+    font-size: 5em;
+    border-color: #00cc00;
+    border-width: 0vw 0vw 0.5vw 0vw;
+    background: #111111;
+    background-color: #111111;
+    color: yellow !important;
+    opacity: 0.6;
+    font-family: 'actionhero';
+}
+
+input:focus {
+    opacity: 1;
+}
+
+input:invalid {
+    border-width: 1vw 1vw 1vw 1vw;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background: #111111;
+    background-color: #111111;
+    color: yellow !important;
+}
+
+.label {
+    color: #ffcc00
+}
+
+.value {
+    color: yellow;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    border-width: 0vw;
+    background-color: rgba(244,244,0,0.4);
+    color: #ffcc00;
+}
+
+input:invalid + div > button {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: darkslategrey;
+    border-color: white;
+    color: white;
+    opacity: 0.2;
+}
+
+#locale {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+#localeselectcontainer {
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#localeselect {
+    padding: 1vw;
+    pointer-events: all;
+    font-size: 2em;
+}
+
+#localeselect > option{
+    font-size: .5em;
+}
+
+#home {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#game {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#settings {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+header > span {
+    font-size: 6em;
+    font-weight: 500;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.gamedivname {
+    font-family: actionhero;
+    color: yellow;
+}
+
+.gamedivsurname {
+    font-family: indelible;
+    color: #ff4400;
+}
+
+.activesection {
+    display: block;
+}
+
+.inactivesection {
+    display: none;
+}
+
+#gameboard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5vw 10vw;
+    border: #ffcc00 1vw solid;
+    background-color: #111111;
+}
+
+.molecell {
+    flex: 0 1 33%;
+    height: 25vw;
+    border: #eeee00 .1vw solid;
+    background-image: url('../images/80smole_old.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: -200%;
+}
+
+.molecell[data-mole="on"] {
+    background-position-x: 0%;
+    transition: background-position-x 50ms;
+}
+
+.molecell[data-mole="off"] {
+    background-position-x: -200%;
+    transition: background-position-x 50ms;
+}
+
+/*
+.molecell:nth-child(2n) {
+    background-color: rgba(255,255,0,0.2);
+}
+
+.molecell:nth-child(2n+1) {
+    background-color: rgba(255,204,0,0.2);
+}
+*/
+#livegamesettings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3.5em;
+    font-family: actionhero;
+}
+
+option {
+    font-size: .75em;
+}
+
+#difficultydiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#difficulty {
+    flex-grow: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#difficultylabel {
+    flex-grow: 1;
+}
+
+#scorediv {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+/*
+#scorelabel span {
+    flex-direction: row;
+    font-size: 3em;
+    font-family: actionhero;
+}
+
+#score span {
+    flex-direction: row;
+    font-size: 3em;
+    font-family: actionhero;
+}
+*/
+#startstop {
+    text-align: center;
+    font-size: 3em;
+    padding: 1em;
+}
+
+#startstop > button {
+    padding: .25em .75em;
+    font-family: indelible;
+    font-size: 2em;
+}
+/*
+.startbutton[data-started="yes"]::after {
+    content: "RESUME";
+}
+
+.startbutton[data-started="no"]::after {
+    content: "START";
+}
+*/
+
+.startbutton::after {
+    content: "RESUME";
+}
+
+#game[data-lang="en"] .startbutton::after {
+    content: "RESUME";
+}
+
+#game[data-lang="es"] .startbutton::after {
+    content: "CONTINUAR";
+}
+
+#game[data-lang="fr"] .startbutton::after {
+    content: "REPRENDRE";
+}
+
+#game[data-lang="de"] .startbutton::after {
+    content: "AUFNEHMEN";
+}
+
+.stopbutton::after {
+    content: "PAUSE";
+}
+
+#game[data-lang="en"] .stopbutton::after {
+    content: "PAUSE";
+}
+
+#game[data-lang="es"] .stopbutton::after {
+    content: "PAUSA";
+}
+
+#game[data-lang="fr"] .stopbutton::after {
+    content: "PAUSE";
+}
+
+#game[data-lang="de"] .stopbutton::after {
+    content: "PAUSIEREN";
+}
+
+#finishgame {
+    text-align: center;
+    font-size: 3em;
+    padding: 1em;
+}
+
+#finishgame > button {
+    padding: .25em .75em;
+    font-family: indelible;
+    font-size: 2em;
+}
+
+.finishbutton::after {
+    content: "END";
+}
+
+#game[data-lang="en"] .finishbutton::after {
+    content: "END";
+}
+
+#game[data-lang="es"] .finishbutton::after {
+    content: "TERMINAR";
+}
+
+#game[data-lang="fr"] .finishbutton::after {
+    content: "FINIR";
+}
+
+#game[data-lang="de"] .finishbutton::after {
+    content: "BEENDEN";
+}
+
+
+#newgame {
+    text-align: center;
+    font-size: 3em;
+    padding: 1em;
+}
+
+#newgame > button {
+    padding: .25em .75em;
+    font-family: indelible;
+    font-size: 2em;
+}
+
+button:active {
+    background-color: yellow;
+    color: #aa8800;
+}
+
+.newgame::after {
+    content: "PLAY";
+}
+
+#home[data-lang="en"] .newgame::after {
+    content: "PLAY";
+}
+
+#home[data-lang="es"] .newgame::after {
+    content: "JUGAR";
+}
+
+#home[data-lang="fr"] .newgame::after {
+    content: "JOUER";
+}
+
+#home[data-lang="de"] .newgame::after {
+    content: "SPIELEN";
+}
+
+#playerdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+select#difficult {
+    border-width: 0vw 0vw 0.3vw 0vw;
+    height: 75%;
+    display: flex;
+    font-size: .75em;
+    font-family: actionhero;
+    color: yellow;
+    background-color: rgba(64, 64, 64, 0.6);
+}
+
+#stonks {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-image: url('/images/stonks.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+}
+
+.stonks {
+    opacity: 1;
+}
+
+.nostonks {
+    opacity: 0;
+    transition: opacity 100ms;
+}
+
+#playerlabel::after {
+    content: "Player:";
+}
+
+#game[data-lang="en"] #playerlabel::after {
+    content: "Player:";
+}
+
+#game[data-lang="es"] #playerlabel::after {
+    content: "Jugador:";
+}
+
+#game[data-lang="fr"] #playerlabel::after {
+    content: "Joueur:";
+}
+
+#game[data-lang="de"] #playerlabel::after {
+    content: "Spieler:";
+}
+
+#difficultylabel::after {
+    content: "Level:";
+}
+
+#game[data-lang="en"] #difficultylabel::after {
+    content: "Level:";
+}
+
+#game[data-lang="es"] #difficultylabel::after {
+    content: "Nivel:";
+}
+
+#game[data-lang="fr"] #difficultylabel::after {
+    content: "Niveau:";
+}
+
+#game[data-lang="de"] #difficultylabel::after {
+    content: "Niveau:";
+}
+
+#scorelabel::after {
+    content: "Points:";
+}
+
+#game[data-lang="en"] #scorelabel::after {
+    content: "Points:";
+}
+
+#game[data-lang="es"] #scorelabel::after {
+    content: "Puntos:";
+}
+
+#game[data-lang="fr"] #scorelabel::after {
+    content: "Points:";
+}
+
+#game[data-lang="de"] #scorelabel::after {
+    content: "Punkte:";
+}
