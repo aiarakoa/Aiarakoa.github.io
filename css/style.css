@@ -391,6 +391,11 @@ button:active {
     flex-direction: row;
 }
 
+.ng-select.ng-select-single.ng-select-filtered {
+    visibility: visible!important;
+     /* or visibility: initial!important; */
+}
+
 select {
     border-width: 0vw 0vw 0.3vw 0vw;
     display: flex;

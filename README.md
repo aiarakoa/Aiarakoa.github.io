@@ -19,3 +19,7 @@ In order to make tests work:
   },
 
 - execute jest: npm test
+
+In order to run the app locally:
+
+- install live-server: npm install -g live-server
