@@ -13,9 +13,7 @@ class GameboardController {
     render() {return this.view.render(this.model.getGameboardID(), this.model.getCellSuffixes(), this.provider)};
 
     startStop() {
-        console.log(`Hiya, was stopped? ${this.isStopped}`);
         this.isStopped              =   !this.isStopped;
-        console.log(`Hiya, is now stopped? ${this.isStopped}`);
         this.newMoleIteration();
     }
 

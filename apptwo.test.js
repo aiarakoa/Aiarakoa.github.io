@@ -15,7 +15,6 @@ function timedClick() {myClick();}
 
 function doClick(a) {
     a.click();
-    console.log("Mole stonked!");
 }
 
 function myClick() {

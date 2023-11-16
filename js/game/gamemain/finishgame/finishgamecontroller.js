@@ -9,7 +9,6 @@ class FinishGameController {
     render() {return this.view.render(this.model.getFinishGameID(), this.clickHandler.bind(this))};
 
     clickHandler() {
-//        this.provider.stopMusic();
         this.provider.resetScore();
         this.provider.resetResume();
         this.provider.resetHardness();

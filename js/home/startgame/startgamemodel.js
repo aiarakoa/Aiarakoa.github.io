@@ -7,7 +7,7 @@ class StartGameModel {
 
     getStartGameID() {return this.startGameID;}
 
-    getDefaultPlaceholder() {console.log(`default placeholder: ${this.getPlaceholder('en')}`); return this.getPlaceholder('en');}
+    getDefaultPlaceholder() {return this.getPlaceholder('en');}
 
     getPlaceholder(placeholderID) {return this.placeholders[placeholderID];}
 }

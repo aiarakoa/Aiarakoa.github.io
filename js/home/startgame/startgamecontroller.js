@@ -11,7 +11,6 @@ class StartGameController {
 
     clickHandler() {
         this.provider.updatePlayer(this.getPlayerName());
-//        this.provider.startMusic();
         this.provider.startStop();
         this.provider.routeToGame();
     }

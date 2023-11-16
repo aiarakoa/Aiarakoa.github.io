@@ -10,15 +10,15 @@ class AudioModel {
 
     getAudioID() {return this.audioID;}
 
-    getAudioSrc(source) {console.log(`sourceTag ${source}, source ${this.audioSources[source]}`); return this.audioSources[source];}
+    getAudioSrc(source) {return this.audioSources[source];}
 
-    getSelectedSource() {console.log(`current sourceTag ${this.selectedSrc}`); return this.getAudioSrc(this.selectedSrc);}
+    getSelectedSource() {return this.getAudioSrc(this.selectedSrc);}
 
     getAppAnchorID() {return this.appAnchorID;}
 
     getAudioType() {return this.audioType;}
 
-    setSelectedSource(sourceID) {console.log(`previous sourceTag ${this.selectedSrc}, new sourceTag ${sourceID}`); this.selectedSrc = sourceID;}
+    setSelectedSource(sourceID) {this.selectedSrc = sourceID;}
 }
 
 export { AudioModel };

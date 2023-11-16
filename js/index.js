@@ -19,15 +19,14 @@ function render() {
   provider.userInteraction  =   false;
   window.addEventListener('mousemove', userInteraction);
   window.addEventListener('touchmove', userInteraction);
-  let locale                =   new Locale({data: {homeID: 'locale', homeClass: 'activesection'}, provider: provider});
-  let home                  =   new Home({data: {homeID: 'home', homeClass: 'activesection'}, provider: provider});
-  let game                  =   new Game({data: {gameID: 'game', gameClass: 'inactivesection'}, provider: provider});
+  let locale                =   new Locale({data: {selectID: 'localeselect', selectAnchorID: 'locale', selectContainerID: 'localeselectcontainer', selectAnchorClassname: 'activesection'}, provider: provider});
+  let home                  =   new Home({data: {homeID: provider.homeViewID, homeClass: 'activesection'}, provider: provider});
+  let game                  =   new Game({data: {gameID: provider.gameViewID, gameClass: 'inactivesection'}, provider: provider});
   let audio                 =   new Audio({data: {gameID: 'myAudio'}, provider: provider});
   document.body.appendChild(home.render());
   document.body.appendChild(game.render());
   document.body.appendChild(audio.render());
   document.body.appendChild(locale.render());
-//  provider.startMusic();
 }
 
 render();

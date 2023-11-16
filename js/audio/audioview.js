@@ -24,17 +24,6 @@ class AudioView {
     startMusic() {
         let audio                       =   document.getElementById(this.audioID);
         audio.loop                      =   true;
-/*
-        try {
-            audio.play();
-        }
-        catch (exception) {
-            console.warn(exception);
-            return false;
-        }
-        
-        return true;
-*/
         audio.play().then(() => {
             return true;
         }).catch(e => {
