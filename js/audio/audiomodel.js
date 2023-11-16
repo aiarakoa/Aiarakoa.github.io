@@ -19,8 +19,6 @@ class AudioModel {
     getAudioType() {return this.audioType;}
 
     setSelectedSource(sourceID) {this.selectedSrc = sourceID;}
-
-    getAudioSources() {return this.audioSources;}    
 }
 
 export { AudioModel };
