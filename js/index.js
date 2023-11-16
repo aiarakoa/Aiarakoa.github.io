@@ -19,6 +19,7 @@ function render() {
   provider.userInteraction  =   false;
   window.addEventListener('mousemove', userInteraction);
   window.addEventListener('touchmove', userInteraction);
+  window.addEventListener('click', userInteraction);
   let locale                =   new Locale({data: {selectID: 'localeselect', selectAnchorID: 'locale', selectContainerID: 'localeselectcontainer', selectAnchorClassname: 'activesection'}, provider: provider});
   let home                  =   new Home({data: {homeID: provider.homeViewID, homeClass: 'activesection'}, provider: provider});
   let game                  =   new Game({data: {gameID: provider.gameViewID, gameClass: 'inactivesection'}, provider: provider});
