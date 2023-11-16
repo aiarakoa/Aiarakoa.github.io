@@ -397,7 +397,7 @@ button:active {
 }
 
 * {
-    touch-action: manipulation;
+    touch-action: none;
 }
 
 select {
