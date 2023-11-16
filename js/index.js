@@ -9,6 +9,7 @@ const provider              =   new Provider();
 const router                =   new Router('/home');
 
 function userInteraction() {
+  alert(userInteraction);
   provider.userInteraction  ?   {}  :   provider.userInteraction = provider.startMusic();
 }
 
