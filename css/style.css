@@ -396,7 +396,7 @@ button:active {
      /* or visibility: initial!important; */
 }
 
-.disabledoubletapzoom {
+* {
     touch-action: manipulation;
 }
 
