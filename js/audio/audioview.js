@@ -25,7 +25,6 @@ class AudioView {
         let audio                       =   document.getElementById(this.audioID);
         audio.loop                      =   true;
         audio.play().then(() => {
-            alert("all fine");
             return true;
         }).catch(e => {
             console.log(e);
