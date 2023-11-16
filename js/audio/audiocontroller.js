@@ -24,7 +24,7 @@ class AudioController {
     }
 
     userInteraction() {
-        provider.userInteraction  ?   {}  :   provider.userInteraction = this.startMusic();
+        this.provider.userInteraction  ?   {}  :   this.provider.userInteraction = this.startMusic();
     }
 }
 
