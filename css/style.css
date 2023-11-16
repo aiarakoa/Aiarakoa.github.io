@@ -1,3 +1,15 @@
+:root:before {
+    content:                url('/images/80smole_old.png')
+                            url('/audio/bluelow.ogg')
+                            url('/audio/bluemedium.ogg')
+                            url('/audio/bluehigh.ogg');
+    font-family:            actionhero indelible;
+    background-image:       url('/images/stonks.png');
+    visibility: hidden;
+    position: absolute;
+    left: -999em;
+}
+
 h1 {
     font-family: actionhero;
     font-size: 15em;
