@@ -396,6 +396,10 @@ button:active {
      /* or visibility: initial!important; */
 }
 
+.disabledoubletapzoom {
+    touch-action: manipulation;
+}
+
 select {
     border-width: 0vw 0vw 0.3vw 0vw;
     display: flex;
