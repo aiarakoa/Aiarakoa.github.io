@@ -6,6 +6,9 @@ class AudioController {
         this.provider.startMusic    =   this.startMusic.bind(this);
         this.provider.stopMusic     =   this.stopMusic.bind(this);
         this.provider.changeMusic   =   this.changeMusic.bind(this);
+        window.addEventListener('mousemove', this.userInteraction.bind(this));
+        window.addEventListener('touchmove', this.userInteraction.bind(this));
+        window.addEventListener('click', this.userInteraction.bind(this));      
         methods                     ?   Object.keys(methods).forEach(key => this[key] = methods[key])   :   {};
     }
 
@@ -18,6 +21,10 @@ class AudioController {
     changeMusic(newSourceTag) {
         this.model.setSelectedSource(newSourceTag);
         this.view.changeMusic(this.model.getSelectedSource());
+    }
+
+    userInteraction() {
+        provider.userInteraction  ?   {}  :   provider.userInteraction = this.startMusic();
     }
 }
 
