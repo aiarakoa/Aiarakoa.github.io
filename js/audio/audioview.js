@@ -41,10 +41,19 @@ class AudioView {
     }
 
     changeMusic(source) {
+        this.loadWithoutPlaying(source).play();
+    }
+
+    loadWithoutPlaying(source) {
         let audio                       =   document.getElementById(this.audioID);
         audio.src                       =   source;
         audio.load();
-        audio.play();
+        return audio;
+    }
+
+    preOfflineLoader(audioSources) {
+        for(const [key, src] of Object.entries(audioSources)) {this.loadWithoutPlaying(src)}
+        this.loadWithoutPlaying(this.initialAudioSrc);
     }
 }
 

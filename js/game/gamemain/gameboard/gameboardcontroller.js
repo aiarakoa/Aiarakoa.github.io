@@ -1,11 +1,12 @@
 class GameboardController {
     constructor(model, view, methods, provider) {
-        this.model                  =   model;
-        this.view                   =   view;
-        this.provider               =   provider;
-        this.provider.startStop     =   this.startStop.bind(this);
-        this.provider.noMoreMoles   =   this.noMoreMoles.bind(this);
-        this.provider.setMsPerMole  =   this.setMillisPerMole.bind(this);
+        this.model                                  =   model;
+        this.view                                   =   view;
+        this.provider                               =   provider;
+        this.provider.startStop                     =   this.startStop.bind(this);
+        this.provider.noMoreMoles                   =   this.noMoreMoles.bind(this);
+        this.provider.setMsPerMole                  =   this.setMillisPerMole.bind(this);
+        this.provider.preOfflineGameboardLoader     =   this.preOfflineLoader.bind(this);
         this.isStopped              =   false;
         methods                     ?   Object.keys(methods).forEach(key => this[key] = methods[key])   :   {};
     }
@@ -41,6 +42,8 @@ class GameboardController {
     }
 
     setMillisPerMole(millisTag) {this.model.setMillisPerMole(millisTag);}
+
+    preOfflineLoader() {this.startStop(); setTimeout(() => this.startStop(), 1250);}
 }
 
 export { GameboardController };
