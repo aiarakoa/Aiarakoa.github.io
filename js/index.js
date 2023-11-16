@@ -24,5 +24,8 @@ function render() {
 }
 
 render();
+provider.preOfflineGameboardLoader();
+provider.preOfflineAudioLoader();
+provider.stonk();
 
 export {provider, router, render};

@@ -10,6 +10,8 @@ class Gameboard {
   }
 
   render() {return this.controller.render();}
+
+  preOfflineLoader() {return this.controller.preOfflineLoader()}
 }
 
 export {Gameboard};
