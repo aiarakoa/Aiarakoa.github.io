@@ -31,3 +31,5 @@ function render() {
 }
 
 render();
+
+export {provider, router, render};
